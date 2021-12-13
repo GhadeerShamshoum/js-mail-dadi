@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(41, 41, 58);
+}
+
+.container{
+    background-color: rgb(7, 40, 73);
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+span{
+    color: blue;
+    font-size: 30px;
+    padding: 5px;
+    background-color: cornflowerblue;
+    border-radius: 6px;
+
+}
+
+.won{
+    color: green;
+    font-size: 20px;
+}
+
+.lose{
+    color: red;
+    font-size: 20px;
+}
+
+.draw{
+    color: lightblue;
+    font-size: 20px;
+}
