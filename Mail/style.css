@@ -25,7 +25,7 @@ h3{
     position: relative;
 }
 
-#form #mail{
+#form #email{
     width: 300px;
     background-color: #292929;
     outline: none;
@@ -38,4 +38,37 @@ h3{
 
 #form #inputBox{
     position: relative;
+}
+
+#text{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    padding: 5px;
+}
+
+#form.invalid .inputBox::before{
+    content: ' ';
+    position: absolute;
+    right: 62px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    background: url(img/x.png);
+    background-size: cover;
+    z-index: 1000;
+    
+}
+
+#form.valid .inputBox::before{
+    content: ' ';
+    position: absolute;
+    right: 62px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    background: url(img/valid.png);
+    background-size: cover;
+    z-index: 1000;
+    
 }
