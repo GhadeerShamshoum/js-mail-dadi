@@ -1,8 +1,9 @@
 
-function validation (){
+function validation(){
 const allowedEmails = ['bbb@gmail.com','ddd@gmail.com', 'ggg@gmail.com'];
 const text = document.getElementById("text");
 const email = document.getElementById("email").value;
+let mailCheck = false;
 
 
 
@@ -10,14 +11,19 @@ const email = document.getElementById("email").value;
 for (let i=0; i < allowedEmails.length; i++){
 
     if( email==(allowedEmails[i])){
-        console.log(email)
+        console.log(email);
+        mailCheck=true;
+    }
+}
 
+
+        if (mailCheck==true){
         form.classList.add("valid");
         form.classList.remove("invalid");
         text.innerHTML = "Welcome";
         text.style.color = "#00ff00";
     }
-      
+
     
     else {
         form.classList.add("invalid");
@@ -27,4 +33,4 @@ for (let i=0; i < allowedEmails.length; i++){
         
     }
 }
-}
+
